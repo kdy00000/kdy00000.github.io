@@ -7,8 +7,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .columnTwo {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+    </style>
+
+
+    <title>HomeHage</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +166,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Homepage</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -36,7 +174,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#download">Download</a>
@@ -55,9 +193,9 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Grayscale</h1>
-              <p class="intro-text">A free, responsive, one page Bootstrap theme.
-                <br>Created by Start Bootstrap.</p>
+              <h1 class="brand-heading">All_zer0</h1>
+              <p class="intro-text">A free, responsive, professional powerpoint theme.
+                <br>Created by all_zer0.</p>
               <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
@@ -72,14 +210,79 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About Grayscale</h2>
-            <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-            <p>This theme features stock photos by
-              <a href="http://gratisography.com/">Gratisography</a>
-              along with a custom Google Maps skin courtesy of
-              <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-            <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+            <h2>PORTFOLIO</h2>
+
+            <div class="slideshow-container">
+
+              <div class="mySlides active">
+                <div class="numbertext">1 / 4</div>
+                <img src="https://postfiles.pstatic.net/MjAxODAzMTdfMjIy/MDAxNTIxMjg5NDA5Mzk2.e1iOHa926XslijsUbkPosJ0mSRax-jOEn7GUFEs6Rv0g._TECTi0XNMqtXJawLhnWvY3TprnEU2SpaSf0hXFe7vgg.PNG.skdy4808/por2.png?type=w773" style="width:100%">
+              </div>
+              <div class="mySlides active">
+                <div class="numbertext">2 / 4</div>
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfMjI5/MDAxNTIxMzYwMzQ5MjA0.VKJ71NFQjC9xrj0x4BRBiTkA5wGaLUHtlwonVpqWdkUg.Jy4PHRJZ8r72his45u-H2TXoszNc0Khcf0u9CNMEAc0g.PNG.skdy4808/2-2.png?type=w773" style="width:100%">
+              </div>
+              <div class="mySlides active">
+                <div class="numbertext">3 / 4</div>
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfMTQ0/MDAxNTIxMzYwMzQ5MjMw.Ws69TSfwftMdVb8KKM01sKTUedF5Y2t76NS9Vrah97gg.38GOaY_elFx8K66uT-8oDbEszpjexo4UFhMuTXK8vwAg.PNG.skdy4808/2-3.png?type=w773" style="width:100%">
+              </div>
+              <div class="mySlides active">
+                <div class="numbertext">4 / 4</div>
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfMjUy/MDAxNTIxMzYwMzQ5MjIx.NSxRBDTP-uy90oXWjQmLUryTugqRBdMAcSsCnC56p5Ug.4Tx2egHQvkLBLuPun0grIB2rFm7LB--R43fToz8X6i8g.PNG.skdy4808/2-4.png?type=w773" style="width:100%">
+              </div>
+              <div style= "text-align: left">
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            </div>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <div class = "fbox-media">
+            </div>
+            <br>
+            <div class="row">
+              <div class="column">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMTdfMzkg/MDAxNTIxMjg5NDA5NTc3.gq_QUOLXKTDjmxp8ULdbib4TY-eriKeRX_98oCFqWLMg.tYtnRokyaWX_PMBBKfhxSCJyYJZA3BHDgZJP58Yl_W4g.PNG.skdy4808/por1.png?type=w773" alt="Fjords" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfMTMz/MDAxNTIxMzU1NzY1NDY2.e-78OfbxJcQFUjORuB0miPRZGDkfIT3HxR1YO-vhPoMg.ttRybyAsqdY57iDNlufrRLw1TRkAxVub2EPWEqEEa2gg.PNG.skdy4808/1-2.png?type=w773" alt="Forest" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfMjcy/MDAxNTIxMzU1NzY1NDA3.lVefXRwI6EnPKQRpXUyF0WOlBAoGqE4bw72SiWq1mJIg.l5dzwumkQyuta4dgE7AAMXPiQUsERyGswKBh4MHoQCcg.PNG.skdy4808/1-4.png?type=w773" alt="Mountains" style="width:100%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMTdfMTYy/MDAxNTIxMjg5NDA5NTA0.CoAs-eEpgT5DqdugUbvLXa3AHl9RO-Z2RKjDn-Xo2owg.1RCZCbAyfybBqpZTaYOBWxzLQuQGEeEvENGbgypq0dUg.PNG.skdy4808/por3.png?type=w773" alt="Fjords" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfMTUx/MDAxNTIxMzY1OTM1OTgz.XQ8xi2vaV0JGLS-48kiFfgTAeaIi1LMHwkHfjYWWnFMg.6g8SQ0kTpatj2uzylzwxGXzSu3DLT6UJlkbN4PVrbfog.PNG.skdy4808/2-5.png?type=w773" alt="Forest" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfMTQ1/MDAxNTIxMzY1OTM1OTc1.CuYVKWzpUROgY1luMmDC9RNWW6bKPYmfzxT7P-_2USkg.rUfxWGVOuNQBpz25Pfr-06GQo_xm9KyG1yD73--aKGMg.PNG.skdy4808/2-6.png?type=w773" alt="Mountains" style="width:100%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="columnTwo">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfMjA4/MDAxNTIxMzY2MTc0MTQy.4WqPmLQpTMs0d1Ub47I1gfhQ4OxAkKnhs-Ku5Y4T-SEg.Hdyxh3Hbz_U6jaBxgimeNXZ6BJQ1A0I3KlASq_jB26Mg.PNG.skdy4808/2-7.png?type=w773" alt="Fjords" style="width:100%">
+              </div>
+              <div class="columnTwo">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfNTEg/MDAxNTIxMzY2MTczOTY1.y2c4K0miiCUG4bAt0JeomuzG05J0ho5rS-Kl6mZFnScg.ZyfGWVgIj0tR1VVZI-YainE5IpsLS8W1OcIFZlXNOxsg.PNG.skdy4808/2-8.png?type=w773" alt="Forest" style="width:100%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="columnTwo">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfNzUg/MDAxNTIxMzY2MTczODc1.1Y-hiXfyQs-KjkRTwjbxrpiV4Iv0w1D5BEvbBDPHywQg.HgZfQKPggaNzmlrsLohRkJ1A_ZSldKwToU-mHrF6dbwg.PNG.skdy4808/2-9.png?type=w773" alt="Fjords" style="width:100%">
+              </div>
+              <div class="columnTwo">
+                <img src="https://postfiles.pstatic.net/MjAxODAzMThfNTEg/MDAxNTIxMzY2MTczOTY1.y2c4K0miiCUG4bAt0JeomuzG05J0ho5rS-Kl6mZFnScg.ZyfGWVgIj0tR1VVZI-YainE5IpsLS8W1OcIFZlXNOxsg.PNG.skdy4808/2-8.png?type=w773" alt="Forest" style="width:100%">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -89,8 +292,8 @@
     <section id="download" class="download-section content-section text-center">
       <div class="container">
         <div class="col-lg-8 mx-auto">
-          <h2>Download Grayscale</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+          <h2>Download Powerpoint template</h2>
+          <p>You can download powerpoint template for free on the page.</p>
           <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
         </div>
       </div>
@@ -101,27 +304,27 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact Start Bootstrap</h2>
+            <h2>Contact allzer0</h2>
             <p>Feel free to leave us a comment on the
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
+              <a href="http://startbootstrap.com/template-overviews/grayscale/">powerpoint template overview page</a>
               on Start Bootstrap to give some feedback about this theme!</p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
+                <a href="https://www.instagram.com/all__zer0/?hl=ko" class="btn btn-default btn-lg">
+                  <i class="fa fa-instagram fa-fw"></i>
+                  <span class="network-name">Instagram</span>
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
+                  <i class="fa fa-youtube fa-fw"></i>
+                  <span class="network-name">Naver</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Google+</span>
+                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-google fa-fw"></i>
+                  <span class="network-name">Q&A</span>
                 </a>
               </li>
             </ul>
@@ -143,7 +346,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
@@ -152,7 +354,33 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
   </body>
-
 </html>
